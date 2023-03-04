@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="江別市認定こども園">
+  <meta name="description" content="江別市認定こども園選びに迷ったら・・の口コミサイト! ぜひ参考に！">
+    <link rel="stylesheet" href="../static/css/fix2_review.css">
+    <link rel="stylesheet" href="../static/css/review.css">
+    <title>江別市の認定こども園選びの参考に！</title>
+</head>
+<body>
+<header>
+<li class="flex-item1">失敗しない！江別市認定こども園 No.1 口コミサイト</li>
+<li class="flex-item3"><a href=""><img src="../static/img/tree_animals_group.png" width="90px"  alt=""></a></li>
+</header>
+<div class="head-box">
+ <h1>[{{facility_name}}]  口コミ　入力欄</h1>
+</div>
+
+<div class="container">
+  <div class="wrap">
+   
+<div class="wrapper_review">
+        
+    <div class="content_review">
+            <div class="main_review">
+                <form action="/add/{{facility_id}}" , method="POST">
+                <p><input type="hidden" name="facility_id" value="{{facility_id}}"></p>
+                
+                <div class="nickname-hoshi-coment_box">
+                    <div class="nickname-hoshi_box">
+                        <p class="nickname-text">ニックネーム</p>
+                        <p class="space_name-hoshi"></p>
+                        <!-- <input class="inputbgc" name="entry.123456789" placeholder="★マーク" value="★マーク" required></p> -->
+                        <p class="hoshi"><label for="area_l" class="hoshi">★★★</label></p>
+                    </div>
+
+                        <div class="nickname-hoshi_box">
+                            <input class="nickname_review" name="name" placeholder="名前" value="名無し" required>
+
+                             
+                            <p class="space_nanashi-hoshiclick"></p>
+
+
+                            <select id="area_l" name="star" class="option-input">
+                                <option value="">★を選択</option>
+                            
+                    
+                                <option value="★">★</option>
+                                <option value="★★">★★</option>
+                                <option value="★★★">★★★</option>
+
+                            </select>
+                        </div>
+                </div>
+
+
+                <p class="nickspace-komentspace"></p>
+
+                <div class="coment-box">
+                    <p class="coment-text">コメント</p>
+                    <textarea class="coment_review" name="comment" placeholder="コメント" rows="10" cols="40" maxlength="400" id="wcheck" required></textarea>
+                </div>
+
+                <input type="submit" id="submitbutton" value="送信" name="save">
+
+
+                <iframe onload='if(submitted){window.location="";}' id=hidden_iframe name=hidden_iframe style=display:none></iframe>
+        <script type="text/javascript">
+        var NGComments = ["よい","ふつう",".exe"]; // 簡易的なNGワードの設定
+        var regex = new RegExp(NGComments.join("|"));
+        function test(wcheck) {
+            if (wcheck.match(regex) != null) {
+                alert("ERROR: コメントにNGワードが含まれています");
+                return false;
+            }
+            document.getElementById("submitbutton").disabled = true;
+            textareas = document.getElementsByTagName('textarea');
+            for(var i=0 ;i < textareas.length ;i ++ ){
+                textareas[i].value = textareas[i].value.replace( /</g ,'&lt;' );
+            }
+            inputs = document.getElementsByTagName('input');
+            for(var i=0 ;i < inputs.length ;i ++ ){
+                inputs[i].value = inputs[i].value.replace( /</g ,'&lt;' );
+            }
+            return submitted=!0;
+        }
+        </script>
+        </form>
+    </div>
+
+</div>
+</div>
+</div>
+<div class="kirin-box">
+<img src="../static/img/giraffe.png" alt="" class="kirin">
+ </div>
+</div>
+<footer>
+    <ul class="footer-item">
+       <a class="footer-item1" herf=""><img src="../static/img/shoes_06.png" alt="" class="panda"></a>
+       <button class="footer-item2" onclick="location.href='/'">topへ戻る</button>
+    </ul>
+    <!-- <div class="panda"> -->
+    <!-- <img src="../static/img/shoes_06.png" width="140px" height="90px" alt=""> -->
+ <!-- </div> -->
+ 
+</footer>
+</body>
+
+</html>

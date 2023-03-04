@@ -1,0 +1,22 @@
+{% extends 'review.html' %}
+{% block content %}
+
+<form action="/add/1" , method="POST">
+    <!-- <p><input type="hidden" name="facility_id" value="{{int:id}}"></p> -->
+    <p><input  type="text" name="name"  id="name" placeholder="名前"  required ></p>
+    <p><textarea name="comment" id="comment" placeholder="コメント" rows="10" cols="40" maxlength="400" required></textarea></p>
+    <select name="star" id="area_l"  class="inputbgc">
+        <option value="">★を選択</option>
+        <option value="☆">★</option>
+        <option value="☆☆">★★</option>
+        <option value="☆☆☆">★★★</option>
+    </select>
+    <input type="submit" id="submitbutton" value="送信" name="save">
+    
+</form>
+
+
+
+{% endblock %}
+
+<!-- <input type="text" value="" placeholder="表示させたいテキストを記述" > -->

@@ -1,0 +1,8 @@
+        <For TOP.html>
+        <button class ="button1" onclick="location.href='/add'">口コミしたい方はこちらから</button>
+        <!-- <a href="/add">レヴューへ遷移</a> -->
+
+        <button class ="button2" onclick="location.href='/bbs'">口コミ結果を見たい方はこちらから</button>
+        <!-- <a href="/bbs">bbsへ遷移</a> -->
+
+               <button class="footer-item2" onclick="location.href='/top'">← トップへ戻る</button>

@@ -1,0 +1,17 @@
+
+{% extends 'top.html' %}
+{% block content %} 
+
+  {% for item in facility_list %}
+    <h3>{{item["id"]}},【{{item["name"]}}】</h3>
+    <img class="photo" src="{{item['photo']}}" alt="">
+    <div class ="button-box">
+      <button class ="button" onclick="location.href='/add/{{item['id']}}'">口コミを書く</button>
+      <button class ="button" onclick="location.href='/bbs/{{item['id']}}'">口コミを見る</button>
+    </div>
+
+
+
+  {% endfor %}
+
+  {% endblock %} 

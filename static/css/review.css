@@ -1,0 +1,22 @@
+.footer-item{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    
+    .footer-item2{
+    background-color: #7ef35a;
+    border-radius: 100vh;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    }
+    
+    
+    .panda{
+      width: 90px;
+      height: 90px;
+      padding-left: 10px;
+      padding-top: 10px;
+    }

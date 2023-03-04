@@ -1,0 +1,16 @@
+body{
+    background-color: #0bbce8;
+    font-size: 80px;
+}
+
+.photo{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    margin-top: auto;
+}
+
+.footer-item2{
+    background: #04FF19;
+    border-radius: 100vh;
+}

@@ -1,0 +1,22 @@
+
+{% extends 'bbs.html' %}
+{% block content %}
+
+
+    {% for item in comments_list %}
+
+        <div class="review-box">
+            <h4>{{item["name"]}}</h4>
+            <p>{{item["star"]}}</p>
+            <p>{{item["comment"]}}</p>
+        <hr>
+        </div>
+
+
+    {% endfor %}
+
+
+
+
+{% endblock %}
+
